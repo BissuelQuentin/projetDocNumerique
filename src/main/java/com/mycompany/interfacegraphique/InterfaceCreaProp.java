@@ -669,17 +669,17 @@ public class InterfaceCreaProp extends java.awt.Frame {
         }
     }//GEN-LAST:event_ajouterObjDesireActionPerformed
 
-<<<<<<< HEAD
+
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
        InterfaceAcceuil acceuil = new InterfaceAcceuil();
        acceuil.setVisible(true);
        this.hide();
     }//GEN-LAST:event_jButton1ActionPerformed
-=======
+
     private void texteTypeObjDesireActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_texteTypeObjDesireActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_texteTypeObjDesireActionPerformed
->>>>>>> 5d254734ff5ddd82e574555a57639091f016672e
+
 
     /**
      * @param args the command line arguments
