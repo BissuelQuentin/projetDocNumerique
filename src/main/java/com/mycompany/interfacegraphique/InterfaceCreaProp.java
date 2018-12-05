@@ -17,6 +17,7 @@ import com.company.tools.XmlTools;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Point;
+import java.awt.event.ActionEvent;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.Date;
@@ -228,7 +229,16 @@ public class InterfaceCreaProp extends java.awt.Frame {
         pan.add(typeObjDesire, new org.netbeans.lib.awtextra.AbsoluteConstraints(1050, 170, 170, -1));
 
         texteTypeObjDesire.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+<<<<<<< HEAD
         pan.add(texteTypeObjDesire, new org.netbeans.lib.awtextra.AbsoluteConstraints(1230, 163, 320, 30));
+=======
+        texteTypeObjDesire.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                texteTypeObjDesireActionPerformed(evt);
+            }
+        });
+        pan.add(texteTypeObjDesire, new org.netbeans.lib.awtextra.AbsoluteConstraints(1230, 170, 320, -1));
+>>>>>>> 5d254734ff5ddd82e574555a57639091f016672e
 
         checkPasObjPropose.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         checkPasObjPropose.setText("Je ne veux pas proposer d'objet");
@@ -659,11 +669,17 @@ public class InterfaceCreaProp extends java.awt.Frame {
         }
     }//GEN-LAST:event_ajouterObjDesireActionPerformed
 
+<<<<<<< HEAD
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
        InterfaceAcceuil acceuil = new InterfaceAcceuil();
        acceuil.setVisible(true);
        this.hide();
     }//GEN-LAST:event_jButton1ActionPerformed
+=======
+    private void texteTypeObjDesireActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_texteTypeObjDesireActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_texteTypeObjDesireActionPerformed
+>>>>>>> 5d254734ff5ddd82e574555a57639091f016672e
 
     /**
      * @param args the command line arguments
