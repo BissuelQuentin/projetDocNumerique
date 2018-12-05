@@ -51,8 +51,8 @@ public class InterfaceAffichProp extends java.awt.Frame {
         boutonFaireConProp = new javax.swing.JButton();
         boutonAccepter = new javax.swing.JButton();
         boutonRefuser = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
 
-        setPreferredSize(new java.awt.Dimension(555, 920));
         addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowClosing(java.awt.event.WindowEvent evt) {
                 exitForm(evt);
@@ -181,6 +181,15 @@ public class InterfaceAffichProp extends java.awt.Frame {
         });
         pan.add(boutonRefuser, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 830, -1, -1));
 
+        jButton1.setText("Acceuil");
+        jButton1.setActionCommand("Acceuil");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        pan.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 10, 130, 50));
+
         add(pan, java.awt.BorderLayout.CENTER);
 
         pack();
@@ -205,6 +214,12 @@ public class InterfaceAffichProp extends java.awt.Frame {
         // TODO mettre la fonction quand l'utilisateur veut faire une contre proposition
     }//GEN-LAST:event_boutonFaireConPropActionPerformed
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+       InterfaceAcceuil acceuil = new InterfaceAcceuil();
+       acceuil.setVisible(true);
+       this.hide();
+    }//GEN-LAST:event_jButton1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -226,6 +241,7 @@ public class InterfaceAffichProp extends java.awt.Frame {
     private javax.swing.JLabel descriptObjPropose;
     private javax.swing.JLabel desire;
     public static javax.swing.JLabel duree;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel laProposition;
     public static javax.swing.JLabel mailEmetteur;
     public static javax.swing.JLabel mailRecepteur;

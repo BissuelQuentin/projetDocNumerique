@@ -103,20 +103,20 @@ public class InterfaceCreaProp extends java.awt.Frame {
         valeurParametreDesire = new javax.swing.JLabel();
         ajouterObjProp = new javax.swing.JButton();
         ajouterObjDesire = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
 
         jMenu1.setText("jMenu1");
 
         jMenu2.setText("jMenu2");
 
-        setPreferredSize(new java.awt.Dimension(1570, 395));
         addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowClosing(java.awt.event.WindowEvent evt) {
                 exitForm(evt);
             }
         });
 
-        pan.setMinimumSize(new java.awt.Dimension(1200, 1200));
-        pan.setPreferredSize(new java.awt.Dimension(1700, 870));
+        pan.setMinimumSize(new java.awt.Dimension(2000, 1200));
+        pan.setPreferredSize(new java.awt.Dimension(1200, 600));
         pan.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         titreFenetreProp.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
@@ -135,7 +135,7 @@ public class InterfaceCreaProp extends java.awt.Frame {
 
         texteEmetteur.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         texteEmetteur.setNextFocusableComponent(texteRecepteur);
-        pan.add(texteEmetteur, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 110, 330, 20));
+        pan.add(texteEmetteur, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 100, 340, 40));
 
         nomRecepteur.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         nomRecepteur.setText("Nom récepteur : *");
@@ -145,30 +145,30 @@ public class InterfaceCreaProp extends java.awt.Frame {
 
         texteRecepteur.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         texteRecepteur.setNextFocusableComponent(choixNbJour);
-        pan.add(texteRecepteur, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 150, 330, 20));
+        pan.add(texteRecepteur, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 150, 340, 40));
 
         duree.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         duree.setText("Durée de validité : *");
         duree.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
-        pan.add(duree, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 190, 160, 20));
+        pan.add(duree, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 210, 160, 20));
 
         mailEmetteur.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         mailEmetteur.setText("Mail émetteur :");
         mailEmetteur.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
-        pan.add(mailEmetteur, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 230, 160, 20));
+        pan.add(mailEmetteur, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 260, 160, 20));
 
         texteMailEmetteur.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         texteMailEmetteur.setNextFocusableComponent(textMailRecepteur);
-        pan.add(texteMailEmetteur, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 230, 330, 20));
+        pan.add(texteMailEmetteur, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 250, 330, 40));
 
         mailRecepteur.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         mailRecepteur.setText("Mail récepteur : ");
         mailRecepteur.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
-        pan.add(mailRecepteur, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 270, 160, -1));
+        pan.add(mailRecepteur, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 310, 160, -1));
 
         textMailRecepteur.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         textMailRecepteur.setNextFocusableComponent(texteTitreProp);
-        pan.add(textMailRecepteur, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 270, 330, -1));
+        pan.add(textMailRecepteur, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 300, 330, 40));
 
         coordonnees.setBackground(new java.awt.Color(210, 210, 210));
         coordonnees.setFont(new java.awt.Font("Arial", 2, 18)); // NOI18N
@@ -179,7 +179,7 @@ public class InterfaceCreaProp extends java.awt.Frame {
         coordonnees.setMaximumSize(new java.awt.Dimension(110, 30));
         coordonnees.setMinimumSize(new java.awt.Dimension(110, 30));
         coordonnees.setPreferredSize(new java.awt.Dimension(110, 30));
-        pan.add(coordonnees, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 70, 480, -1));
+        pan.add(coordonnees, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, 500, -1));
 
         maProposition.setBackground(new java.awt.Color(210, 210, 210));
         maProposition.setFont(new java.awt.Font("Arial", 2, 18)); // NOI18N
@@ -190,7 +190,7 @@ public class InterfaceCreaProp extends java.awt.Frame {
         maProposition.setMaximumSize(new java.awt.Dimension(110, 30));
         maProposition.setMinimumSize(new java.awt.Dimension(110, 30));
         maProposition.setPreferredSize(new java.awt.Dimension(110, 30));
-        pan.add(maProposition, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 70, 1020, -1));
+        pan.add(maProposition, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 40, 1020, -1));
 
         titreProp.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         titreProp.setText("Titre de ma proposition : *");
@@ -199,7 +199,7 @@ public class InterfaceCreaProp extends java.awt.Frame {
 
         texteTitreProp.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         texteTitreProp.setNextFocusableComponent(texteTypeObjPropose);
-        pan.add(texteTitreProp, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 110, 810, -1));
+        pan.add(texteTitreProp, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 93, 810, 40));
 
         jePropose.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jePropose.setText("Je propose : *");
@@ -211,7 +211,7 @@ public class InterfaceCreaProp extends java.awt.Frame {
         pan.add(typeObjPropose, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 170, 170, -1));
 
         texteTypeObjPropose.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        pan.add(texteTypeObjPropose, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 170, 320, -1));
+        pan.add(texteTypeObjPropose, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 163, 320, 30));
 
         descriptObjPropose.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         descriptObjPropose.setText("Description de l'objet (ex : taille, couleur, prix,...) :");
@@ -228,7 +228,7 @@ public class InterfaceCreaProp extends java.awt.Frame {
         pan.add(typeObjDesire, new org.netbeans.lib.awtextra.AbsoluteConstraints(1050, 170, 170, -1));
 
         texteTypeObjDesire.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        pan.add(texteTypeObjDesire, new org.netbeans.lib.awtextra.AbsoluteConstraints(1230, 170, 320, -1));
+        pan.add(texteTypeObjDesire, new org.netbeans.lib.awtextra.AbsoluteConstraints(1230, 163, 320, 30));
 
         checkPasObjPropose.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         checkPasObjPropose.setText("Je ne veux pas proposer d'objet");
@@ -260,11 +260,11 @@ public class InterfaceCreaProp extends java.awt.Frame {
                 boutonValiderPropActionPerformed(evt);
             }
         });
-        pan.add(boutonValiderProp, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 310, 500, 40));
+        pan.add(boutonValiderProp, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 360, 510, 70));
 
         jLabel1.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jLabel1.setText("Jour(s)");
-        pan.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 180, -1, 40));
+        pan.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 200, -1, 40));
 
         choixNbJour.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         choixNbJour.setNextFocusableComponent(texteMailEmetteur);
@@ -274,7 +274,7 @@ public class InterfaceCreaProp extends java.awt.Frame {
                 choixNbJourStateChanged(evt);
             }
         });
-        pan.add(choixNbJour, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 190, 50, -1));
+        pan.add(choixNbJour, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 210, 70, 30));
 
         descriptObjPropose1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         descriptObjPropose1.setText("Description de l'objet  :");
@@ -326,6 +326,11 @@ public class InterfaceCreaProp extends java.awt.Frame {
         pan.add(nomParametreDesire, new org.netbeans.lib.awtextra.AbsoluteConstraints(1050, 250, -1, 20));
 
         texteNomDesire.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        texteNomDesire.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                boutonSupprimerparamDesireActionPerformed(evt);
+            }
+        });
         pan.add(texteNomDesire, new org.netbeans.lib.awtextra.AbsoluteConstraints(1190, 250, 190, -1));
 
         texteValeurDesire.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
@@ -352,6 +357,14 @@ public class InterfaceCreaProp extends java.awt.Frame {
             }
         });
         pan.add(ajouterObjDesire, new org.netbeans.lib.awtextra.AbsoluteConstraints(1390, 280, 170, -1));
+
+        jButton1.setText("Acceuil");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        pan.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 360, 200, 60));
 
         add(pan, java.awt.BorderLayout.CENTER);
 
@@ -646,6 +659,12 @@ public class InterfaceCreaProp extends java.awt.Frame {
         }
     }//GEN-LAST:event_ajouterObjDesireActionPerformed
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+       InterfaceAcceuil acceuil = new InterfaceAcceuil();
+       acceuil.setVisible(true);
+       this.hide();
+    }//GEN-LAST:event_jButton1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -672,6 +691,7 @@ public class InterfaceCreaProp extends java.awt.Frame {
     private javax.swing.JLabel descriptObjPropose;
     private javax.swing.JLabel descriptObjPropose1;
     private javax.swing.JLabel duree;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

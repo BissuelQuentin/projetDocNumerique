@@ -67,9 +67,11 @@ public class InterfaceAut extends java.awt.Frame {
         texteDescDemande = new javax.swing.JTextPane();
         choixNbJour = new javax.swing.JSpinner();
         jLabel1 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
 
+        setFocusable(false);
         setLocationRelativeTo(null);
-        setMinimumSize(new java.awt.Dimension(520, 330));
+        setMinimumSize(new java.awt.Dimension(920, 330));
         setPreferredSize(new java.awt.Dimension(535, 490));
         addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowClosing(java.awt.event.WindowEvent evt) {
@@ -77,7 +79,7 @@ public class InterfaceAut extends java.awt.Frame {
             }
         });
 
-        pan.setPreferredSize(new java.awt.Dimension(540, 320));
+        pan.setPreferredSize(new java.awt.Dimension(700, 420));
         pan.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         mailEmetteur.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
@@ -170,6 +172,14 @@ public class InterfaceAut extends java.awt.Frame {
         jLabel1.setText("Jour(s)");
         pan.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 150, -1, 40));
 
+        jButton1.setText("Acceuil");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        pan.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 10, 150, 50));
+
         add(pan, java.awt.BorderLayout.CENTER);
 
         pack();
@@ -248,6 +258,12 @@ public class InterfaceAut extends java.awt.Frame {
         // TODO add your handling code here:
     }//GEN-LAST:event_texteMailEmetteurActionPerformed
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        InterfaceAcceuil acceuil = new InterfaceAcceuil();
+       acceuil.setVisible(true);
+       this.hide();
+    }//GEN-LAST:event_jButton1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -264,6 +280,7 @@ public class InterfaceAut extends java.awt.Frame {
     private javax.swing.JSpinner choixNbJour;
     private javax.swing.JLabel descDemande;
     private javax.swing.JLabel duree;
+    private javax.swing.JButton jButton1;
     private javax.swing.JFrame jFrame1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel mailEmetteur;

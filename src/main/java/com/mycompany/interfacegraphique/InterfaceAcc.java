@@ -68,4 +68,8 @@ public class InterfaceAcc extends java.awt.Frame {
     public static javax.swing.JLabel messageTroc;
     private javax.swing.JLabel titreFenetreAcc;
     // End of variables declaration//GEN-END:variables
+
+    private void initComponents() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }
